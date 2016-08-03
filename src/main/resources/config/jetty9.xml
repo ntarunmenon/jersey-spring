@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configure class="org.eclipse.jetty.webapp.WebAppContext">
+ <New id="h2Datasource" class="org.eclipse.jetty.plus.jndi.Resource">
+        <Arg>jdbc/restDemoDB</Arg>
+        <Arg>
+            <New class="com.mchange.v2.c3p0.ComboPooledDataSource">
+                <Set name="driverClass">org.h2.Driver</Set>
+                <Set name="jdbcUrl">jdbc:h2:~/temp/testdb</Set>
+                <Set name="user">test</Set>
+                <Set name="password">test</Set>
+            </New>
+        </Arg>
+    </New>
+</Configure>
