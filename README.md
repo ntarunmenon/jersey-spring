@@ -13,3 +13,5 @@ To Run the application ``` mvn clean install jetty-run```
 Service is available at ``` localhost:8080/jersey-spring/name ```
 
 To run integration tests ``` mvn verify ```
+
+Based on  the excellent [article](http://www.codingpedia.org/ama/tutorial-rest-api-design-and-implementation-in-java-with-jersey-and-spring/)
